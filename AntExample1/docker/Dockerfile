@@ -1,5 +1,5 @@
 #base image
-FROM 192.168.94.70/192.168.94.70/java8tomcat
+FROM 192.168.94.70/192.168.94.70/java8tomcat/registry
 
 #Author
 MAINTAINER hasithal<hasithalakmal684@gmail.com>
