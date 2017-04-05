@@ -11,7 +11,7 @@ COPY AntExample.war /opt/apache-tomcat/webapps
 VOLUME /opt/apache-tomcat/webapps
 
 # expose http and jmx ports
-EXPOSE 8080 8009
+EXPOSE 8082 8010
 
 # run tomcat by default
 CMD ["/opt/apache-tomcat/bin/catalina.sh", "run"]
