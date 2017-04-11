@@ -4,8 +4,13 @@ FROM 192.168.94.70/java8tomcat
 #Author
 MAINTAINER hasithal<hasithalakmal684@gmail.com>
 
+#Add configuration files to tomcat
+ADD context.xml /opt/apache-tomcat/conf/
+
 #add war file to web apps
 COPY ../workspace/bcare_5_4_1_int/dist/bcare_5_4_1_int.war /opt/apache-tomcat/webapps
+
+
 
 # add volume for webapps folder
 VOLUME /opt/apache-tomcat/webapps
